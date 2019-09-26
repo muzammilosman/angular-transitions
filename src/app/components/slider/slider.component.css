@@ -1,0 +1,47 @@
+.colored-modal{
+    background-image: linear-gradient(to right,rgb(228, 107, 107),rgb(231, 63, 63));
+}
+
+.close{
+    position: fixed;
+    top: 30px;
+    right: 370px;
+    background-color: rgb(43, 116, 226);
+    opacity: 1;
+    border-radius: 10px;
+    color: white;
+}
+
+.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover {
+    opacity: 1;
+}
+
+i{
+    color: red;
+}
+
+.modal-header, .modal-footer{
+    border-top: none;
+    border-bottom: none;
+}
+
+.modal-content{
+    width: 600px;
+}
+
+.modal-dialog{
+    width: 600px;
+}
+
+.normal-body-header{
+    text-align: center;
+}
+
+.community-icon{
+    font-size: 300px;
+    text-align: center;
+}
+
+.comm-left-pane, .comm-right-pane{
+    text-align: center;
+}

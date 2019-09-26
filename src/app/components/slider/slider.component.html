@@ -1,4 +1,4 @@
-<p>slider works!</p>
+<p (click) = 'activateModal()' >Toggle pop-up button</p>
 <ng-template #content let-modal>
     <div class="modal-header">
       <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
@@ -6,25 +6,55 @@
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
-    <div class="modal-body">
-      <form>
-        <div class="form-group">
-          <label for="dateOfBirth">Date of birth</label>
-          <div class="input-group">
-            
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary calendar" (click)="dp.toggle()" type="button"></button>
-            </div>
-          </div>
-        </div>
-      </form>
+    <div class="modal-body colored-modal">
+     <div class="normal-modal">
+       <div class="normal-modal-header">
+         <h1></h1>
+       </div>
+     </div>
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
     </div>
   </ng-template>
+  <div [@EnterLeave] = "'flyIn'">
+    <button class="btn btn-lg btn-outline-primary" (click)="open(content)" >Launch demo modal</button>
+  </div>
+
+  <ng-template #content1 let-modal>
+      <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title"></h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <div class="normal-body-header">
+              <h3>Community Score</h3>
+            </div>
+            <div class="row ">
+              <div class="col-md-6 comm-left-pane">
+                  <i class="material-icons community-icon">
+                      favorite
+                  </i>
+              </div>
+              <div class="col-md-6 comm-right-pane">
+                <h5>Represented by a heart, Community score is Lovrem Ipsum dolor set arnet,</h5>
+              </div>  
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+      </div>
+    </ng-template>
+
+    <button class="btn btn-lg btn-outline-primary" (click)="open(content1)" >Launch demo modal 2</button>
   
-  <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
+   
   
   <hr>
   
