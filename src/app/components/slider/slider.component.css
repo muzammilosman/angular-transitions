@@ -16,9 +16,6 @@
     opacity: 1;
 }
 
-i{
-    color: red;
-}
 
 .modal-header, .modal-footer{
     border-top: none;
@@ -35,13 +32,51 @@ i{
 
 .normal-body-header{
     text-align: center;
+    padding-bottom: 10%;
 }
 
 .community-icon{
-    font-size: 300px;
+    font-size: 180px;
+    text-align: center;
+    color: red;
+}
+
+.comm-left-pane{
     text-align: center;
 }
 
-.comm-left-pane, .comm-right-pane{
+.comm-right-pane{
+    text-align: left;
+}
+
+.check-icon, .error-icon{
+
+    font-size: 150px;
+}
+
+
+.text-centre{
     text-align: center;
+    justify-content: center;
+}
+
+.status-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.status-desc{
+    font-size: 18px;
+}
+
+.status-button{
+    padding-top: 10%;
+}
+
+.success-modal{
+    color: green;
+}
+
+.fail-modal{
+    color: red;
 }

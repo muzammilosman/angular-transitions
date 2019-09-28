@@ -1,0 +1,34 @@
+
+.cart-footer, .cart-header{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.cart-header{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.total{
+    text-align: right;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.total-title{
+    text-align: left;
+}
+
+
+.btn-primary{
+    width: 100%;
+}
+
+.random-fact{
+    background-color: azure;
+}
+
+.item-add{
+    text-align: right;
+}

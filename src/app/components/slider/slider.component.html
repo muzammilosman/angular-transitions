@@ -24,9 +24,7 @@
   <ng-template #content1 let-modal>
       <div class="modal-header">
         <h4 class="modal-title" id="modal-basic-title"></h4>
-        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        
       </div>
       <div class="modal-body">
         <form>
@@ -40,8 +38,8 @@
                       favorite
                   </i>
               </div>
-              <div class="col-md-6 comm-right-pane">
-                <h5>Represented by a heart, Community score is Lovrem Ipsum dolor set arnet,</h5>
+              <div class="col-md-6 comm-right-pane ">
+                Represented by a heart, Community score is Lovrem Ipsum dolor set arnet
               </div>  
             </div>
           </div>
@@ -54,7 +52,68 @@
 
     <button class="btn btn-lg btn-outline-primary" (click)="open(content1)" >Launch demo modal 2</button>
   
-   
+    <ng-template #content2 let-modal>
+      <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title"></h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group success-modal">
+            <!-- <div class="normal-body-header">
+              <h3>Community Score</h3>
+            </div> -->
+            <div class="text-centre col-md-12">
+              <i class="material-icons check-icon">
+                check_circle_outline
+                </i>
+
+              <div class="status-title">
+                SUCCESS!
+              </div>
+              <div class="status-desc">
+                The doors are now unlocked! Enjoy your refreshments
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </ng-template>
+
+    <button class="btn btn-lg btn-outline-primary" (click)="open(content2)" >Launch demo modal 3</button>
+  
+    
+    <ng-template #content3 let-modal>
+      <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title"></h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group fail-modal">
+            <!-- <div class="normal-body-header">
+              <h3>Community Score</h3>
+            </div> -->
+            <div class="text-centre col-md-12">
+              <i class="material-icons error-icon">
+                error
+                </i>
+
+              <div class="status-title">
+                OOPS
+              </div>
+              <div class="status-desc">
+                It wasn't you, it was us. Please try again !
+              </div>
+              <div class="status-button">
+                <button class="btn btn-success">TRY AGAIN</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </ng-template>
+
+    <button class="btn btn-lg btn-outline-primary" (click)="open(content3)" >Launch wrong modal</button>
+  
   
   <hr>
   

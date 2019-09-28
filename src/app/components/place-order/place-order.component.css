@@ -11,3 +11,8 @@
 .product-catalogue{
     padding: 100px 100px;
 }
+
+.cart{
+    width: 800px;
+    background-color: rgb(231, 233, 233);
+}

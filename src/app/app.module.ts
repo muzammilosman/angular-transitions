@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { NgbModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { CartComponent } from './components/cart/cart.component';
 
 const appRoutes: Routes = [
   {path: '', component: PlaceOrderComponent},
@@ -25,7 +26,8 @@ const appRoutes: Routes = [
     SliderComponent,
     PlaceOrderComponent,
     NavbarComponent,
-    ProductCatalogueComponent
+    ProductCatalogueComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
