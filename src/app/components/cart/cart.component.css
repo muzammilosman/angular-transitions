@@ -10,10 +10,32 @@
     font-weight: bold;
 }
 
+.cart-items{
+    background-color: white;
+    border-radius: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item-detail{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item-img img{
+    width: 35%;
+    border-radius: 18px;
+}
+
 .total{
     text-align: right;
     font-size: 22px;
     font-weight: bold;
+    padding: 15px;
 }
 
 .total-title{
@@ -26,9 +48,36 @@
 }
 
 .random-fact{
-    background-color: azure;
+    background-color: rgb(238, 238, 238);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 18px;
+}
+
+.random-fact i{
+    color: yellowgreen;
+    font-size: 50px;
+}
+
+.item-price, .quantity{
+    color: green;
 }
 
 .item-add{
     text-align: right;
+}
+
+.item-add i{
+    font-size: 35px;
+    color: yellow;
+    cursor: pointer;
+}
+
+.btn{
+    width: 100%;
+    background-color: yellow;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
 }

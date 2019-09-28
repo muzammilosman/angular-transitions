@@ -13,6 +13,28 @@
 }
 
 .cart{
-    width: 800px;
-    background-color: rgb(231, 233, 233);
+    width: 700px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+i{
+    color: red;
+    font-size: 50px;
+}
+
+.community-score-detail{
+    padding: 15px;
+    border-radius: 18px;
+    background-color: rgb(216, 216, 216);
+    font-weight: bold;
+}
+
+.community-score-text{
+    padding-left: 10px;
+    font-weight: bolder;
+}
+
+.score-detail{
+    color: green;
+    font-weight: bolder;
 }

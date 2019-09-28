@@ -1,16 +1,27 @@
 <div class="cart-header col-md-12">
-    Shopping Cart
+    My Cart
 </div>
 <div class="cart-body col-md-12">
-    <div class="cart-items row">
+    <div class="cart-items row" *ngFor = "let item of cartItems">
         <div class="item-img col-md-4">
-            <img src="">
+            <img src="./../../../assets/images/bodega.jpg">
         </div>
-        <div class="item-detail col-md-4">
-            Tropicana
+        <div class="item-detail col-md-4"> 
+            {{item.itemName}}
+            <div class="item-price">
+                Rs. {{item.price}}
+            </div>
+            <div class="quantity">
+                x {{item.quantity}}
+            </div>
         </div>
         <div class="item-add col-md-4">
-            -
+            <i class="material-icons">
+                    add_box
+                </i><br>
+                <i class="material-icons">
+                    indeterminate_check_box
+                </i>    
         </div>
     </div>
     <div class="total row">
@@ -20,10 +31,13 @@
 </div>
 <div class="cart-footer col-md-12">
     <div class="random-fact">
-        DID YOU KNOW?
+        <i class="material-icons">
+            emoji_objects
+            </i>
+            <h6>DID YOU KNOW?</h6>
         <p>For every Rs 20/- you spend we credit 1 point to your account as a thank you</p>
     </div>
     <div class="checkout">
-        <button class="btn btn-primary">Checkout</button>
+        <button class="btn" style="background-color: yellow;">CHECKOUT</button>
     </div>
 </div>
